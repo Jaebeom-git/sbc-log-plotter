@@ -1,0 +1,24 @@
+[project]
+name = "sbc-log-plotter"
+version = "0.1.0"
+description = "Standalone GUI and PNG exporter for flat SBC robot text logs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pyyaml>=6.0",
+  "matplotlib>=3.7",
+  "PySide6>=6.5",
+  "pyqtgraph>=0.13",
+]
+
+[project.scripts]
+sbc-log-plot = "sbc_log_plotter.gui:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["sbc_log_plotter"]

@@ -1,0 +1,22 @@
+# Local sample logs are large and are not part of the git distribution.
+/examples/
+
+# Pixi local environment
+.pixi/
+
+# Python/runtime artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build outputs
+build/
+dist/
+
+# SBC parse caches
+*.sbc-cache.npz
+.*.sbc-cache.npz
